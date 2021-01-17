@@ -46,3 +46,8 @@ body{
 .call-action span a{
     color: #008891;
 }
+
+.header h1{
+    font-family: 'Yellowtail', cursive;
+    color: #0f3057;
+}
