@@ -51,3 +51,26 @@ body{
     font-family: 'Yellowtail', cursive;
     color: #0f3057;
 }
+
+.img-profile-card img{
+    max-width: 2.5rem !important;
+    max-height: 2.5rem !important;
+    margin-left: -6rem;
+    margin-bottom: 1em;
+}
+
+.img-profile-card a {
+    margin-left: 1em;
+    margin-top: 0.5em;
+}
+
+/*User profile CSS section*/
+
+.img-profile img{
+    max-width: 6rem !important;
+    max-height: 6rem !important;
+}
+
+.img-profile span{
+    margin-left: 1em;
+}
