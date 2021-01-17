@@ -1,0 +1,32 @@
+body{
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #0f3057;
+}
+
+.mainlogin h1{
+    font-family: 'Yellowtail', cursive;
+    font-size: 120px;
+    margin-top: 15rem;
+    border-right: 1px solid black;
+    padding-bottom: 15rem;
+  }
+
+.mainlogin .login-form{
+    margin-top: 15rem;
+}
+
+.mainlogin .login-form h2{
+    text-align: center
+}
+
+.mainlogin .login-form button {
+    margin-top: 2em;
+    background-color: #0f3057 !important;
+    border: none;
+}
+
+.mainlogin .login-form button:hover{
+    background-color: #008891 !important;
+}
