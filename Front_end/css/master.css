@@ -1,24 +1,31 @@
 body{
-  font-family: 'Poppins', sans-serif;
-  margin: 0;
-  padding: 0;
-  color: #0f3057;
+    font-family: 'Roboto', sans-serif;;
+    margin: 0;
+    padding: 0;
+    color: #0f3057;
 }
+.col-mainlgo{
+    border-right: 1px solid #0f3057;
+    margin-top: 15rem;
+    padding-bottom: 5rem;
+}
+
 
 .mainlogin h1{
     font-family: 'Yellowtail', cursive;
     font-size: 120px;
-    margin-top: 15rem;
-    border-right: 1px solid black;
-    padding-bottom: 15rem;
+    margin-bottom: 60px;
   }
 
 .mainlogin .login-form{
     margin-top: 15rem;
+    padding: 30px;
+    box-shadow: 0 1px 6px 0 #20212447;
+    border-radius:  5px;
 }
 
 .mainlogin .login-form h2{
-    text-align: center
+    text-align: center;
 }
 
 .mainlogin .login-form button {
@@ -29,4 +36,13 @@ body{
 
 .mainlogin .login-form button:hover{
     background-color: #008891 !important;
+}
+
+.call-action {
+    margin-top:30px;
+    text-align: center;
+}
+
+.call-action span a{
+    color: #008891;
 }

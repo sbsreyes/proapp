@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Yellowtail&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/master.css">
     <link rel="icon" type="image/png" href="img/favicon.png">
@@ -14,8 +16,13 @@
     <section class="mainlogin">
             <div class="container">
                 <div class="row">
-                    <div class="col-sm-6 col-md-6 col-sm-12">
+                    <div class="col-sm-6 col-md-6 col-sm-12 col-mainlgo">
                         <h1>Proapp</h1>
+                        <span class="site-slogan">
+                            Con Proapp podras compartir tus proyectos con
+                            la comunidad, ellos podrán comentar y apoyarte
+                            ¿qué estás esperando para unirte?
+                        </span>
                     </div>
                     <div class="col-md-6 col-sm-12">
                         <form action="" method="POST" class="login-form">
@@ -26,7 +33,8 @@
                                     type="text"
                                     class="form-control"
                                     name="user"
-                                    id="user">
+                                    id="user"
+                                    required>
                             </div>
                             <div class="form-group">
                                 <label for="password">Constraseña</label>
@@ -45,8 +53,10 @@
                             </div>
                         </form>
                         <div class="row">
-                            <div class="col-sm-12">
-                                Hola desde el nuevo col
+                            <div class="col-sm-12 call-action">
+                                <span>¿Aún no tienes cuenta? |
+                                    <a href="#">Regístrate</a>
+                                </span>
                             </div>
                         </div>
                     </div>
