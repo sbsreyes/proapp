@@ -74,3 +74,28 @@ body{
 .img-profile span{
     margin-left: 1em;
 }
+
+.nw-pro-prfl{
+    max-height: 40px;
+}
+
+/* Update profile form style section*/
+.profile-upt-form h3{
+    font-family: 'Yellowtail', cursive;
+    color: #0f3057;
+    font-size: 50px;
+}
+.p_form{
+    box-shadow: 0 1px 6px 0 #20212447;
+    padding: 2em;
+    border-radius: 5px;
+}
+
+.p_form button{
+    background-color:#0f3057;
+    border: None;
+}
+
+.p_form button:hover{
+    background-color: #008891 !important;
+}

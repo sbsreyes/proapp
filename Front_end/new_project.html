@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Yellowtail&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/master.css">
+    <link rel="icon" type="image/png" href="img/favicon.png">
+    <title>Proapp | Principal</title>
+</head>
+
+<body>
+    <!--Header Section-->
+    <section class="header">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container">
+                <a class="navbar-brand" href="feed.html">
+                    <h1>Proapp</h1>
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText"
+                    aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarText">
+                    <ul class="navbar-nav mr-auto">
+                    </ul>
+                    <span class="navbar-text">
+                        <a href="profile.html" style="color: #EB596E;">
+                            Cancelar
+                        </a>
+                    </span>
+                </div>
+            </div>
+        </nav>
+    </section>
+    <!--Header Section-->
+    <!--Form section-->
+    <section class="profile-upt-form">
+        <div class="container">
+            <div class="row mt-5">
+                <div class="col-sm-12 d-flex justify-content-center">
+                    <h3 style="color: #16c79a;">
+                        Agrega un nuevo proyecto
+                    </h3>
+                </div>
+            </div>
+            <div class="row mt-5">
+                <div class="col-sm-12 d-flex justify-content-center">
+                    <form action="" method="POST" class="p_form">
+                        <div class="form-group">
+                            <label for="img_perfil">Imagen de perfil |</label>
+                            <input type="file" name="img_perfil" id="img_perfil" class="form-control"
+                                style="padding: 4px;">
+                        </div>
+                        <div class="form-group">
+                            <label for="titulo">Título</label>
+                            <input type="text" name="titulo" id="titulo" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label for="bio">¿De qué trata tu proyecto?</label>
+                            <textarea name="bio" id="bio" cols="30" rows="5" class="form-control"></textarea>
+                        </div>
+                        <div class="form-button">
+                            <button type="submit" class="btn btn-primary mb-3 btn-block">
+                                Actualizar
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--Form section-->
+</body>
+
+</html>
