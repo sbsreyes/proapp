@@ -1,0 +1,99 @@
+{% extends 'core/base.html' %}
+{% load static %}
+{% block title%}Proapp | Actualiza Perfil{% endblock %}
+{% block content %}
+<!--Header Section-->
+<section class="header">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <a class="navbar-brand" href="{% url 'profile' request.user.pk %}">
+                <h1>Proapp</h1>
+            </a>
+            <button
+                class="navbar-toggler"
+                type="button"
+                data-toggle="collapse"
+                data-target="#navbarText"
+                aria-controls="navbarText"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+            >
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarText">
+                <ul class="navbar-nav mr-auto">
+                </ul>
+                <span class="navbar-text">
+                    <a
+                        href="{% url 'profile' request.user.pk %}"
+                        style="color: #EB596E;"
+                    >
+                        Cancelar
+                    </a>
+                </span>
+            </div>
+        </div>
+    </nav>
+</section>
+<!--Header Section-->
+<!--Form section-->
+<section class="profile-upt-form">
+    <div class="container">
+        <div class="row mt-5">
+            <div class="col-sm-12 d-flex justify-content-center">
+                <h3>Actualiza tu perfil</h3>
+            </div>
+        </div>
+        <div class="row mt-5">
+            <div class="col-sm-12 d-flex justify-content-center">
+                <form
+                    action="{% url 'profile_update' request.user.pk %}"
+                    method="POST"
+                    class="p_form"
+                    enctype="multipart/form-data"
+                >
+                    {% csrf_token %}
+                    <div class="form-group">
+                        <label for="id_bio">Cuentanos quien eres</label>
+                        <textarea
+                            name="bio"
+                            id="id_bio"
+                            cols="30"
+                            rows="5"
+                            class="form-control"
+                        ></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="id_url">Instagram</label>
+                        <input
+                            type="url"
+                            name="url"
+                            id="id_url"
+                            class="form-control"
+                        >
+                    </div>
+                    <div class="form-group">
+                        <label for="id_picture">Imagen de perfil</label>
+                        <input
+                            type="file"
+                            name="picture"
+                            id="id_picture"
+                            class="form-control"
+                            style="padding: 4px;"
+                        >
+                    </div>
+                    <div class="form-button">
+                        <button
+                            type="submit"
+                            class="btn btn-primary mb-3 btn-block"
+                        >
+                            Actualizar
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+<!--Form section-->
+{% endblock %}

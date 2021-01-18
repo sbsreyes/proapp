@@ -15,12 +15,20 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
-
+from django.conf import settings
 urlpatterns = [
     #Core urls file
     path('', include('core.urls')),
     #Feed urls
     path('', include('project.urls')),
+    #User urls
+    path('', include('user.urls')),
     #Admin urls
     path('admin/', admin.site.urls),
 ]
+
+#Making available the capability to upload images only for development
+
+if settings.DEBUG:
+    from django.conf.urls.static import static
+    urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
