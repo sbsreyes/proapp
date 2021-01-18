@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Yellowtail&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'core/css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'core//css/master.css' %}">
+    <link rel="icon" type="image/png" href="{% static 'core/img/favicon.png' %}">
+    <title>{% block title%}{% endblock %}</title>
+</head>
+
+<body>
+    {% block content %}{% endblock %}
+    <script src="{% static 'core/js/jquery.min.js' %}" charset="utf-8"></script>
+    <script src="{% static 'core/js/bootstrap.min.js' %}" charset="utf-8"></script>
+    <script src="https://unpkg.com/@popperjs/core@2/dist/umd/popper.js"></script>
+</body>    
+</html>

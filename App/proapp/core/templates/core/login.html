@@ -1,0 +1,57 @@
+{% extends 'core/base.html' %}
+{% load static %}
+{% block title%} Proapp | Iniciar Sesión {% endblock %}
+{% block content %}
+<!--Login section-->
+<section class="mainlogin">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6 col-md-6 col-sm-12 col-mainlgo">
+                    <h1>Proapp</h1>
+                    <span class="site-slogan">
+                        Con Proapp podras compartir tus proyectos con
+                        la comunidad, ellos podrán comentar y apoyarte
+                        ¿qué estás esperando para unirte?
+                    </span>
+                </div>
+                <div class="col-md-6 col-sm-12">
+                    <form action="" method="POST" class="login-form">
+                        <h2>Iniciar Sesión</h2>
+                        <div class="form-group">
+                            <label for="user">Usuario</label>
+                            <input
+                                type="text"
+                                class="form-control"
+                                name="user"
+                                id="user"
+                                required>
+                        </div>
+                        <div class="form-group">
+                            <label for="password">Constraseña</label>
+                            <input
+                                type="password"
+                                class="form-control"
+                                name="password"
+                                required>
+                        </div>
+                        <div class="form-button">
+                            <button
+                                type="submit"
+                                class="btn btn-primary mb-3 btn-block">
+                                Iniciar Sesión
+                            </button>
+                        </div>
+                    </form>
+                    <div class="row">
+                        <div class="col-sm-12 call-action">
+                            <span>¿Aún no tienes cuenta? |
+                                <a href="signup.html">Regístrate</a>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+</section>
+<!--Login section-->
+{% endblock %}

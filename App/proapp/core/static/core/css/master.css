@@ -1,0 +1,101 @@
+body{
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #0f3057;
+}
+.col-mainlgo{
+    border-right: 1px solid #0f3057;
+    margin-top: 15rem;
+    padding-bottom: 5rem;
+}
+
+
+.mainlogin h1{
+    font-family: 'Yellowtail', cursive;
+    font-size: 120px;
+    margin-bottom: 60px;
+  }
+
+.mainlogin .login-form{
+    margin-top: 15rem;
+    padding: 30px;
+    box-shadow: 0 1px 6px 0 #20212447;
+    border-radius:  5px;
+}
+
+.mainlogin .login-form h2{
+    text-align: center;
+}
+
+.mainlogin .login-form button {
+    margin-top: 2em;
+    background-color: #0f3057 !important;
+    border: none;
+}
+
+.mainlogin .login-form button:hover{
+    background-color: #008891 !important;
+}
+
+.call-action {
+    margin-top:30px;
+    text-align: center;
+}
+
+.call-action span a{
+    color: #008891;
+}
+
+.header h1{
+    font-family: 'Yellowtail', cursive;
+    color: #0f3057;
+}
+
+.img-profile-card img{
+    max-width: 2.5rem !important;
+    max-height: 2.5rem !important;
+    margin-left: -6rem;
+    margin-bottom: 1em;
+}
+
+.img-profile-card a {
+    margin-left: 1em;
+    margin-top: 0.5em;
+}
+
+/*User profile CSS section*/
+
+.img-profile img{
+    max-width: 6rem !important;
+    max-height: 6rem !important;
+}
+
+.img-profile span{
+    margin-left: 1em;
+}
+
+.nw-pro-prfl{
+    max-height: 40px;
+}
+
+/* Update profile form style section*/
+.profile-upt-form h3{
+    font-family: 'Yellowtail', cursive;
+    color: #0f3057;
+    font-size: 50px;
+}
+.p_form{
+    box-shadow: 0 1px 6px 0 #20212447;
+    padding: 2em;
+    border-radius: 5px;
+}
+
+.p_form button{
+    background-color:#0f3057;
+    border: None;
+}
+
+.p_form button:hover{
+    background-color: #008891 !important;
+}
