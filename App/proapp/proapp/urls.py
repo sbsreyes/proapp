@@ -23,6 +23,9 @@ urlpatterns = [
     path('', include('project.urls')),
     #User urls
     path('', include('user.urls')),
+    #Django auth registration paths
+    path('accounts/', include('django.contrib.auth.urls')),
+    path('accounts/', include('registration.urls')),
     #Admin urls
     path('admin/', admin.site.urls),
 ]

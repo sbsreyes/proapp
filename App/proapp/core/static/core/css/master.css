@@ -6,7 +6,7 @@ body{
 }
 .col-mainlgo{
     border-right: 1px solid #0f3057;
-    margin-top: 15rem;
+    margin-top: 8rem;
     padding-bottom: 5rem;
 }
 
@@ -18,7 +18,7 @@ body{
   }
 
 .mainlogin .login-form{
-    margin-top: 15rem;
+    margin-top: 8rem;
     padding: 30px;
     box-shadow: 0 1px 6px 0 #20212447;
     border-radius:  5px;

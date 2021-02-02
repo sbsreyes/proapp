@@ -34,7 +34,7 @@
                     </li>
                 </ul>
                 <span class="navbar-text">
-                    <a href="login.html" style="color: #EB596E;">
+                    <a href="{% url 'logout' %}" style="color: #EB596E;">
                         Cerrar Sesión
                     </a>
                 </span>
@@ -48,7 +48,11 @@
     <div class="container">
         <div class="row">
             <div class="col-sm-1 img-profile">
-                <img src="{{profile.picture.url}}" alt="Imagen de perfil" class="">
+                {% if profile.picture %}
+                    <img src="{{profile.picture.url}}" alt="Imagen de perfil" class="">
+                {% else %}
+                    <img class="card-img-top" src="{% static 'core/img/profile.svg' %}" alt="Card image cap">
+                {% endif %}
             </div>
             <div class="col-sm-3 img-profile">
                 <span>

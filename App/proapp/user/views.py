@@ -5,8 +5,10 @@ from django.urls import reverse
 from user.models import Profile
 #Importing forms from user forms
 from user.forms import ProfileForm
+#Restricting the access
+from django.contrib.auth.decorators import login_required
 # Create your views here.
-
+@login_required()
 def profile(request, username):
     profile = Profile.objects.get(user=username)
     return render(
@@ -14,7 +16,7 @@ def profile(request, username):
         template_name='user/profile.html',
         context={'profile':profile}  
     )
-
+@login_required()
 def profile_update(request, username):
     profile = request.user.profile
     if request.method == 'POST':
@@ -34,10 +36,4 @@ def profile_update(request, username):
         request = request,
         template_name = 'user/update_profile.html',
         context = {'form':form}
-    )
-
-
-    return render(
-        request = request,
-        template_name='user/update_profile.html'
     )

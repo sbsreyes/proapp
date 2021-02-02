@@ -1,0 +1,53 @@
+{% extends 'core/base.html' %}
+{% block title %}Proapp | Regístrate{% endblock %}
+{% block content %}
+<style>
+    .su-form span{
+        font-size: 13px;
+        color: grey;
+    }
+    .su-form ul li{
+        font-size: 13px;
+        color: grey;
+    }
+    .su-form #id_password2{
+        margin-right: 4rem;
+    }
+</style>
+<section class="mainlogin">
+    <div class="container mb-5">
+        <div class="row">
+            <div class="col-sm-6 col-md-6 col-sm-12 col-mainlgo">
+                <h1>Proapp</h1>
+                <span class="site-slogan">
+                    Con Proapp podras compartir tus proyectos con
+                    la comunidad, ellos podrán comentar y apoyarte
+                    ¿qué estás esperando para unirte?
+                </span>
+            </div>
+            <div class="col-md-6 col-sm-12">
+                <form action="" method="POST" class="login-form su-form">
+                    <h2>Regístrate</h2>
+                    {% csrf_token %}
+                    {{form.as_p}}
+                    <div class="form-button">
+                        <button
+                            type="submit"
+                            class="btn btn-primary mb-3 btn-block"
+                        >
+                            Regístrate
+                        </button>
+                    </div>
+                </form>
+                <div class="row">
+                    <div class="col-sm-12 call-action">
+                        <span>¿Ya tienes cuenta? |
+                            <a href="{% url 'login' %}">Inicia Sesión</a>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}
